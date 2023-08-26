@@ -1,0 +1,149 @@
+.demo-preview {
+    margin: auto;
+    text-align: center;
+  }
+ 
+    .progress {
+        background-color: #ffffff;
+        border-radius: 3px;
+        box-shadow: none;
+        border-radius: 32px;
+    }
+  
+  .progress.progress-xs {
+    height: 3px;
+    margin-top: 5px;
+  }
+  .progress.progress-sm {
+    height: 10px;
+    margin-top: 5px;
+  }
+  .progress.progress-lg {
+    height: 25px;
+  }
+  .progress.vertical {
+    position: relative;
+    width: 20px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 10px;
+  }
+  .progress.vertical > .progress-bar {
+    width: 100% !important;
+    position: absolute;
+    bottom: 0;
+  }
+  .progress.vertical.progress-xs {
+    width: 5px;
+    margin-top: 5px;
+  }
+  .progress.vertical.progress-sm {
+    width: 10px;
+    margin-top: 5px;
+  }
+  .progress.vertical.progress-lg {
+    width: 30px;
+  }
+  .progress-bar {
+    background-color: rgb(82, 172, 102);
+    box-shadow: none;
+    height: 12px;
+  }
+  .progress-bar.text-left {
+    text-align: left;
+  }
+  .progress-bar.text-left span {
+    margin-left: 10px;
+  }
+  .progress-bar.text-right {
+    text-align: right;
+  }
+  .progress-bar.text-right span {
+    margin-right: 10px;
+  }
+  @-webkit-keyframes progress-bar-stripes {
+    from {
+      background-position: 40px 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+  @keyframes progress-bar-stripes {
+    from {
+      background-position: 40px 0;
+    }
+    to {
+      background-position: 0 0;
+    }
+  }
+  .progress.active .progress-bar, .progress-bar.active {
+    -webkit-animation: progress-bar-stripes 2s linear infinite;
+    -o-animation: progress-bar-stripes 2s linear infinite;
+    animation: progress-bar-stripes 2s linear infinite;
+  }
+  .progress-striped .progress-bar, .progress-bar-striped {
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+    background-size: 40px 40px;
+  }
+
+
+
+
+
+
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root{
+    box-shadow: none !important;
+    border: 1px dashed #bbb;
+    margin-bottom: 10px;
+  }
+  .css-1elwnq4-MuiPaper-root-MuiAccordion-root:before{
+    background-color: transparent !important;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .rating {
+    display: inline-block;
+  }
+  
+  .rating input {
+    display: none;
+  }
+  
+  .rating label {
+    float: right;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+  }
+  
+  .rating label:before {
+    content: '\2605';
+    font-size: 30px;
+  }
+  
+  .rating input:checked ~ label,
+  .rating label:hover,
+  .rating label:hover ~ label {
+    color: orange;
+    transition: color 0.3s;
+  }
+  
+  

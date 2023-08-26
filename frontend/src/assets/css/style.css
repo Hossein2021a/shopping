@@ -1,0 +1,91 @@
+﻿@import url(fontiran.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+  font-family: IRANSansXFaNum, "Open Sans", sans-serif !important;
+  box-sizing: border-box !important;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: IRANSansXFaNum, "Open Sans", sans-serif !important;
+  box-sizing: border-box !important;
+  direction: rtl;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+textarea {
+  font-family: IRANSansXFaNum, "Open Sans", sans-serif !important;
+}
+h1 {
+  font-weight: bold;
+}
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.ltr {
+  direction: ltr;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-small {
+  font-size: 0.8em;
+}
+.text-xsmall {
+  font-size: 0.6em;
+}
+.text-large {
+  font-size: 1.2em;
+}
+.text-xlarge {
+  font-size: 1.4em;
+}
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-thin {
+  font-weight: 100;
+}
+.text-UltraLight {
+  font-weight: 200;
+}
+.text-light {
+  font-weight: 300;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-demibold {
+  font-weight: 600;
+}
+.text-bold {
+  font-weight: 700;
+}
+
+.text-extrabold {
+  font-weight: 800;
+}
+.text-bolded {
+  font-weight: 900;
+}
+
+

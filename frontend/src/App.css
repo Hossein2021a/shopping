@@ -1,0 +1,484 @@
+body {
+  direction: rtl;
+  max-width: 2500px;
+  margin: auto;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5f5f5f;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #20232a;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(216, 216, 216);
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.top-bg {
+  background: url("../src/assets/images/abs.png") right top 30px no-repeat,
+    url("../src/assets/images/hero.jpg") top no-repeat;
+
+  padding-bottom: 155px;
+  padding-top: 80px;
+}
+
+.top-bg-low {
+  background: url("../src/assets/images/abs.png") right top 30px no-repeat;
+
+  padding-top: 80px;
+}
+
+.box1 {
+  width: max-content;
+}
+.box2 {
+  width: inherit;
+}
+
+.dropdown {
+  transition: max-height 0s ease-out, opacity 0.5s;
+}
+
+.dropdown.show {
+  transition: max-height 1s ease-out, opacity 0.5s;
+}
+
+.leftarrow {
+  transition: transform 0.3s;
+}
+.leftarrow.arrow {
+  transform: rotate(-90deg);
+  color: green;
+}
+
+.navbtn.coloring {
+  color: green;
+}
+
+/* search form */
+
+/* From uiverse.io by @satyamchaudharydev */
+/* removing default style of button */
+
+.form button {
+  border: none;
+  background: none;
+  color: #8b8ba7;
+}
+/* styling of whole input container */
+.form {
+  --timing: 0.3s;
+  --width-of-input: 200px;
+  --height-of-input: 45px;
+  --border-height: 2px;
+  --input-bg: #fff;
+  --border-color: #2f2ee9;
+  --border-radius: 10px;
+  --after-border-radius: 1px;
+  position: relative;
+  width: var(--width-of-input);
+  height: var(--height-of-input);
+  display: flex;
+  align-items: center;
+  padding-inline: 0.8em;
+  border-radius: var(--border-radius);
+  transition: border-radius 0.5s ease;
+  background: var(--input-bg, #fff);
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.12);
+}
+/* styling of Input */
+.input {
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+}
+/* styling of animated border */
+.form:before {
+  content: "";
+  position: absolute;
+  background: var(--border-color);
+  transform: scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: var(--border-height);
+  left: 0;
+  bottom: 0;
+  border-radius: 1px;
+  transition: transform var(--timing) ease;
+}
+/* Hover on Input */
+.form:focus-within {
+  border-radius: var(--after-border-radius);
+}
+
+input:focus {
+  outline: none;
+}
+/* here is code of animated border */
+.form:focus-within:before {
+  transform: scale(1);
+}
+/* styling of close button */
+/* == you can click the close button to remove text == */
+.reset {
+  border: none;
+  background: none;
+  opacity: 0;
+  visibility: hidden;
+}
+/* close button shown when typing */
+input:not(:placeholder-shown) ~ .reset {
+  opacity: 1;
+  visibility: visible;
+}
+/* sizing svg icons */
+.form svg {
+  width: 17px;
+  margin-top: 3px;
+}
+
+/* start swiper */
+
+.mySwiper {
+  margin: 0 auto;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  direction: rtl;
+  max-width: 800px;
+  height: 100%;
+  border-radius: 25px;
+  overflow: revert !important;
+  width: 73%;
+}
+
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 25px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mySwiper .swiper-pagination {
+  position: absolute;
+  transform: translatex(-50%);
+  z-index: 1;
+  width: auto !important;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 12px;
+  opacity: 1;
+  background: rgba(255, 185, 0, 0.3);
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background: #ffb200;
+  width: 11px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.mySwiper .swiper-vertical > .mySwiper .swiper-pagination-bullets,
+.mySwiper .swiper-pagination-vertical.swiper-pagination-bullets {
+  left: var(--swiper-pagination-right, 20px);
+  right: auto;
+  top: 50%;
+  transform: translate3d(0px, -50%, 0);
+}
+
+
+
+.mySwiper2 .swiper-pagination-bullet {
+  border-radius: 0;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  line-height: 30px;
+  font-size: 12px;
+  opacity: 1;
+  background: rgba(255, 185, 0, 0.3);
+  display: inline-block;
+  margin-right: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.mySwiper2 .swiper-pagination-bullet-active {
+  background: #ffb200;
+  height: 11px;
+  border-radius: 10px;
+}
+
+.mySwiper2 {
+  overflow-y: visible;
+  overflow-x: clip;
+}
+
+.mySwiper2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  border-radius: 25px;
+  padding: 0 10px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradia {
+  background-color: transparent;
+  height: 350px;
+  width: 200px;
+  background: url("../src/assets/images/line.svg") no-repeat,
+    linear-gradient(190deg, rgb(82, 172, 102) 0%, #67a57d 100%);
+  background-position: center left;
+  background-size: cover;
+  filter: brightness(100%) contrast(100%) saturate(100%) blur(0px)
+    hue-rotate(0deg);
+}
+
+.foot li {
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.muirtl-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  padding: 22px 15px !important;
+}
+
+.muirtl-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+  font-size: 13px !important;
+  top: -3px !important;
+}
+.css-j204z7-MuiFormControlLabel-root {
+  width: 100% !important;
+  justify-content: invert !important;
+  margin: 0 !important;
+  margin-bottom: 1rem !important;
+}
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  font-size: 14px !important;
+}
+
+.Toastify__toast-body > div:last-child {
+  font-size: 12px;
+}
+
+.course-bg{
+  background: url("../src/assets/images/abs.png") right top 100px no-repeat,
+  url("../src/assets/images/ab1.png") left top 200px no-repeat;
+
+}
+
+.stick{
+  position: sticky;
+  top: 2rem;
+}
+
+.react-loading-skeleton {
+  --pseudo-element-display: block;
+}
+
+
+
+.pagin{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.pager{
+
+  border: 1px solid #bbb;
+  background-color: transparent;
+
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 32px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.linkable{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.activeClassName{
+  background-color: #67a57d;
+  color: #fff;
+}
+
+.disabledClassName{
+  color: #eee;
+}
+
+.prenNext{
+  border: 1px solid #bbb;
+  background-color: transparent;
+  width: 35px;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 2rem;
+border-radius: 5px;
+}
+.linkprev{
+  font-size: large;
+}
+
+.muirtl-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.muirtl-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input.muirtl-jedpe8-MuiSelect-select-MuiInputBase-input-MuiOutlinedInput-input {
+  padding-left: 32px;
+  font-size: 14px;
+}
+
+
+
+
+.radio-button-container {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.radio-button {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+}
+
+.radio-button__input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-button__label {
+  display: inline-block;
+  padding-left: 30px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #f2f2f2;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  font-size: 12px;
+}
+
+.radio-button__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #555;
+  transition: all 0.3s ease;
+}
+
+.radio-button__input:checked + .radio-button__label .radio-button__custom {
+  background-color: #52ac66;
+  border-color: transparent;
+  transform: scale(0.8);
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+.radio-button__input:checked + .radio-button__label {
+  color: #52ac66;
+}
+
+.radio-button__label:hover .radio-button__custom {
+  transform: scale(1.2);
+  border-color: #52ac66;
+  box-shadow: 0 0 20px #4c8bf580;
+}
+
+
+
+
+
+:root {
+  --background-gradient: linear-gradient(178deg, #52ac66 10%, #eee);
+  --gray: #52ac66;
+  --darkgray: #52ac66;
+}
+
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 10px red;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  color: #fff;
+  background-color: var(--darkgray);
+  background-image: none;
+  cursor: pointer;
+  padding-right: 55px !important;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 2.5em;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  background-color: #82daaea3;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+
+#goodCanvas1{
+  font-family: IRANSansXFaNum, "Open Sans", sans-serif !important;
+}
